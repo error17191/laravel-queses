@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
+    dispatch(new \App\Jobs\LogSomething());
+
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
