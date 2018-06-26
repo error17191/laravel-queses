@@ -54,7 +54,7 @@ return [
             'secret' => env('SQS_SECRET', 'your-secret-key'),
             'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
             'queue' => env('SQS_QUEUE', 'your-queue-name'),
-            'region' => env('SQS_REGION', 'us-east-1'),
+            'region' => env('SQS_REGION', 'us-east-2'),
         ],
 
         'redis' => [
