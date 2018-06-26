@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/user/settings', 'UserSettingsController@edit')->name('edit_user_settings_form');
+Route::put('/user/settings', 'UserSettingsController@update')->name('update_user_settings');
+
+
