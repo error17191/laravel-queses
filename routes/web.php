@@ -12,8 +12,9 @@
 */
 
 Route::get('/', function () {
-    dispatch(new \App\Jobs\LogSomething());
-
+    if(auth()->user()){
+        Mail::to(auth()->user())->queue(new \App\Mail\RegisterationWelcom());
+    }
     return view('welcome');
 });
 
