@@ -25,8 +25,8 @@ class UserSettingsController extends Controller
         if ($request->file('image')) {
             $file = $request->file('image');
 
-            if($uuid = Storage::disk('tmp')->putFile('/', $file)){
-                $this->dispatch(new UpdateImage(auth()->user(), $uuid, $file->getClientOriginalName()));
+            if ($uuid = Storage::disk('tmp')->putFile('/', $file)) {
+                $this->dispatch(new UpdateImage(auth()->user(), $uuid));
             }
 
         }

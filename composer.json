@@ -8,10 +8,12 @@
         "php": "^7.1.3",
         "aws/aws-sdk-php": "^3.62",
         "fideloper/proxy": "^4.0",
+        "intervention/image": "^2.4",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
         "league/flysystem-aws-s3-v3": "~1.0",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "rap2hpoutre/laravel-log-viewer": "^0.16.0"
     },
     "require-dev": {
         "filp/whoops": "^2.0",

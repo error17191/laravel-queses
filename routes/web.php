@@ -26,3 +26,4 @@ Route::get('/user/settings', 'UserSettingsController@edit')->name('edit_user_set
 Route::put('/user/settings', 'UserSettingsController@update')->name('update_user_settings');
 
 
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
